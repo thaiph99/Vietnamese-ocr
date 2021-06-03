@@ -1,1 +1,1 @@
-# vietnamese-ocr
+# Vietnamese-ocr

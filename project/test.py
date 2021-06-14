@@ -1,26 +1,23 @@
-import argparse
-import csv
-import os
-import re
-
-import cv2
+ 
 import joblib
-import matplotlib.pyplot as plt
-import numpy as np
-import torch
-from PIL import Image
 from vietocr.tool.config import Cfg
 from vietocr.tool.predictor import Predictor
-
-from modules.image_clf.predict import Predictor_image
 from modules.image_segmentation.predict import segment_single_images
-from modules.text_clf.phoBert import predict_phoBert
+import torch
 from modules.text_clf.regex import date_finder
+from modules.text_clf.phoBert import predict_phoBert
 from modules.text_clf.svm import predict_svm
+from PIL import Image
+from modules.image_clf.predict import Predictor_image
 from modules.text_detect.predict import test_net, net, refine_net, poly
+import re
+import os
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+import csv
+import argparse
 from utils import rotate_box, align_box, get_idx
-
-
 # from modules.text_recognition.predict import text_recognizer
 
 

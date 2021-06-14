@@ -4,7 +4,7 @@ from collections import OrderedDict
 from torch.autograd import Variable
 import time
 import cv2
-import numpy as npư
+import numpy as np
 from .modules_craft import *
 pretrained = 'weights/craft_mlt_25k.pth'
 refiner_model = 'weights/craft_refiner_CTW1500.pth'
